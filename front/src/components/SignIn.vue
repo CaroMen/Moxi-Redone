@@ -1,83 +1,62 @@
 <template>
-  <form @submit.prevent="SignIn">
-    <div class="field title">
-      <label for="title">Create A Profile:</label>
-      <input type="text" name="title" v-model="title" />
+  <div class="signin container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate" />
+            <label class="active" for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate" />
+            <label class="active" for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" />
+            <label class="active" for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" />
+            <label class="active" for="email">Email</label>
+            <span
+              class="helper-text"
+              data-error="wrong"
+              data-success="right"
+            ></span>
+          </div>
+        </div>
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
     </div>
-    <div class="field">
-      <label for="ingredient">Email:</label>
-      <input type="text" name="ingredient" v-model="ingredients[index]" />
-      <i class="material-icons delete" @click="deleteIng(ing)">delete</i>
-    </div>
-    <div class="field add-ingredient">
-      <label for="add-ingredient">Add an ingredient:</label>
-      <input
-        type="text"
-        name="add-ingredient"
-        @keydown.tab.prevent="addIng"
-        v-model="another"
-      />
-    </div>
-    <div class="field center-align">
-      <p v-if="feedback" class="red-text">{{ feedback }}</p>
-      <button class="btn pink">Add Smoothie</button>
-    </div>
-  </form>
+  </div>
 </template>
 
 <script>
 export default {
   name: "SignIn",
-  data() {
-    return {
-      title: null,
-      another: null,
-      feedback: null,
-      slug: null
-    };
-  },
-  methods: {
-    SignIn() {
-      if (this.title) {
-        this.feedback = null;
-        // create a slug
-        this.slug = slugify(this.title, {
-          replacement: "-",
-          remove: /[$*_+~.()'"!\-:@]/g,
-          lower: true
-        });
-        db.collection("smoothies")
-          .add({
-            title: this.title,
-            email: this.email,
-            slug: this.slug
-          })
-          .then(() => {
-            this.$router.push({ name: "Index" });
-          })
-          .catch(err => {
-            console.log(err);
-          });
-      } else {
-        this.feedback = "You must enter an email";
-      }
-    },
-    password() {
-      if (this.another) {
-        this.ingredients.push(this.another);
-        this.another = null;
-        this.feedback = null;
-      } else {
-        this.feedback = "You must enter a value to add an ingredient";
-      }
-    },
-    deleteIng() {
-      this.ingredients = this.ingredients.filter(ingredients => {
-        return ingredient != ing;
-      });
-    }
-  }
+  data() {}
 };
 </script>
 
-<style></style>
+<style>
+.signin {
+  margin-top: 60px;
+  padding: 20px;
+  max-width: 500px;
+  background-color: #ffd15c;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom, #ffe299, #ffd15c);
+}
+</style>

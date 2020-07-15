@@ -31,13 +31,16 @@
 <script>
 export default {
   name: "Navbar",
-  data() {}
+  data() {
+    return {};
+  }
 };
 </script>
 
 <style>
 .navbar nav {
   padding: 0 60px;
+  font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
 #nav-mobile {

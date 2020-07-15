@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <v-app>
+      <Navbar />
       <router-view />
     </v-app>
   </div>
@@ -16,3 +17,5 @@ export default {
   }
 };
 </script>
+
+<style></style>
