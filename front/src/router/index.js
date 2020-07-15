@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
+import VueResponsiveImage from "vue-responsive-image";
 import Index from "@/components/Index";
 import SignIn from "@/components/SignIn";
 
