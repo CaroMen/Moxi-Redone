@@ -16,7 +16,17 @@
       <img class="plant-4" src="@/assets/leaves_object.svg" />
     </div>
     <div class="title teal-text center-align">
-      <h2>Welcome Back!</h2>
+      <h2>Welcome!</h2>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="first_name" type="text" class="validate" />
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate" />
+        <label for="last_name">Last Name</label>
+      </div>
     </div>
     <div class="row">
       <form class="col s12">
@@ -52,7 +62,7 @@
 
 <script>
 export default {
-  name: "SignIn",
+  name: "SignUp",
   data() {}
 };
 </script>
@@ -63,7 +73,7 @@ body {
 }
 
 .signin {
-  margin-top: 100px;
+  margin-top: 60px;
   padding: 20px;
   max-width: 500px;
   background-color: #ffd15c;

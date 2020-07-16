@@ -13,12 +13,19 @@
               </router-link>
             </li>
             <li>
+              <router-link :to="{ name: 'Dashboard' }">
+                <a class="waves-effect waves-dark btn">Dashboard</a>
+              </router-link>
+            </li>
+            <li>
               <router-link :to="{ name: 'SignIn' }">
                 <a class="waves-effect waves-dark btn">Sign In</a>
               </router-link>
             </li>
             <li>
-              <a class="waves-effect waves-dark btn">Sign Up</a>
+              <router-link :to="{ name: 'SignUp' }">
+                <a class="waves-effect waves-dark btn">Sign Up</a>
+              </router-link>
             </li>
           </ul>
         </router-link>
