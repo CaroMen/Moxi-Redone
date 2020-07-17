@@ -1,20 +1,20 @@
 <template>
   <div class="signin container">
-    <div class="moxi-image">
-      <img class="moxi" src="@/assets/animal.png" />
+    <!-- <div class="moxi-image">
+      <img class="moxi" src="../assets/animal.png" />
     </div>
     <div class="plant-image">
-      <img class="plant" src="@/assets/leaves_object.svg" />
+      <img class="plant" src="../assets/leaves_object.png" />
     </div>
     <div class="plant-image">
-      <img class="plant-2" src="@/assets/leaves_object.svg" />
+      <img class="plant-2" src="../assets/leaves_object.png" />
     </div>
     <div class="plant-image">
-      <img class="plant-3" src="@/assets/leaves_object.svg" />
+      <img class="plant-3" src="../assets/leaves_object.png" />
     </div>
     <div class="plant-image">
-      <img class="plant-4" src="@/assets/leaves_object.svg" />
-    </div>
+      <img class="plant-4" src="../assets/leaves_object.png" />
+    </div> -->
     <div class="title teal-text center-align">
       <h2>Welcome Back!</h2>
     </div>
@@ -53,7 +53,7 @@
 <script>
 export default {
   name: "SignIn",
-  data() {}
+  data() {},
 };
 </script>
 
