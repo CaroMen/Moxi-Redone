@@ -1,19 +1,19 @@
 <template>
   <div class="signin container">
     <div class="moxi-image">
-      <img class="moxi" src="../assets/animal.svg" />
+      <v-img class="moxi" :src="require('../assets/animal.svg')" />
     </div>
     <div class="plant-image">
-      <img class="plant" src="../assets/Leaves_object.svg" />
+      <v-img class="plant" :src="require('../assets/Leaves_object.svg')" />
     </div>
     <div class="plant-image">
-      <img class="plant-2" src="../assets/Leaves_object.svg" />
+      <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')" />
     </div>
     <div class="plant-image">
-      <img class="plant-3" src="../assets/Leaves_object.svg" />
+      <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')" />
     </div>
     <div class="plant-image">
-      <img class="plant-4" src="../assets/Leaves_object.svg" />
+      <v-img class="plant-4" :src="require('../assets/Leaves_object.svg')" />
     </div>
     <div class="title teal-text center-align">
       <h2>Welcome!</h2>
