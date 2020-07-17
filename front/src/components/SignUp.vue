@@ -1,20 +1,20 @@
 <template>
   <div class="signin container">
-    <!-- <div class="moxi-image">
-      <img class="moxi" src="../assets/animal.png" />
+    <div class="moxi-image">
+      <img class="moxi" src="../assets/animal.svg" />
     </div>
     <div class="plant-image">
-      <img class="plant" src="../assets/leaves_object.png" />
+      <img class="plant" src="../assets/Leaves_object.svg" />
     </div>
     <div class="plant-image">
-      <img class="plant-2" src="../assets/leaves_object.png" />
+      <img class="plant-2" src="../assets/Leaves_object.svg" />
     </div>
     <div class="plant-image">
-      <img class="plant-3" src="../assets/leaves_object.png" />
+      <img class="plant-3" src="../assets/Leaves_object.svg" />
     </div>
     <div class="plant-image">
-      <img class="plant-4" src="../assets/leaves_object.png" />
-    </div> -->
+      <img class="plant-4" src="../assets/Leaves_object.svg" />
+    </div>
     <div class="title teal-text center-align">
       <h2>Welcome!</h2>
     </div>
