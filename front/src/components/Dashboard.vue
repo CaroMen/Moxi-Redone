@@ -1,6 +1,6 @@
 <template>
-  <div class="dashboard container">
-    <div class="card add-act container center">
+  <div class="container">
+    <div class="card add-act container amber accent-1 center teal-text">
       <h2>Add New Activity</h2>
       <a href class="btn-floating btn-large halfway-fab teal">
         <router-link :to="{ name: 'AddActivity' }">
@@ -8,22 +8,27 @@
         </router-link>
       </a>
     </div>
-    <div
-      class="card amber accent-1"
-      v-for="activity in activities"
-      :key="activity.id"
-    >
-      <div class="card-content">
-        <i class="material-icons delete" @click="deleteActivity(activity.id)"
-          >delete</i
-        >
-        <h2 class="teal-text">{{ activity.title }}</h2>
-        <ul class="details">
-          <li v-for="(details, index) in activity.details" :key="index">
-            <span class="chip">{{ details }}</span>
-          </li>
-        </ul>
+    <div class="dashboard">
+      <div
+        class="card amber accent-1"
+        v-for="activity in activities"
+        :key="activity.id"
+      >
+        <div class="card-content">
+          <i class="material-icons delete" @click="deleteActivity(activity.id)"
+            >delete</i
+          >
+          <h2 class="teal-text">{{ activity.title }}</h2>
+          <ul class="details">
+            <li v-for="(details, index) in activity.details" :key="index">
+              <span class="chip">{{ details }}</span>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="calendar">
+      <h2>Hello</h2>
     </div>
   </div>
 </template>
@@ -95,5 +100,9 @@ export default {
   cursor: pointer;
   color: #aaa;
   font-size: 1.4em;
+}
+
+.add-act {
+  position: relative;
 }
 </style>
