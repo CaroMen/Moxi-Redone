@@ -1,29 +1,41 @@
 <template>
-  <div class="container">
-    <div class="card add-act container amber accent-1 center teal-text">
-      <h2>Add New Activity</h2>
-      <a href class="btn-floating btn-large halfway-fab teal">
-        <router-link :to="{ name: 'AddActivity' }">
-          <i class="material-icons add">add</i>
-        </router-link>
-      </a>
+  <div class="">
+    <!-- <v-parallax
+      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+    ></v-parallax> -->
+    <div class="header">
+      <div class="welcome center">
+        <h2>I dont know what will go here</h2>
+      </div>
+      <div class="card add-act container amber accent-1 center teal-text">
+        <h2>Add New Activity</h2>
+        <a href class="btn-floating btn-large halfway-fab teal">
+          <router-link :to="{ name: 'AddActivity' }">
+            <i class="material-icons add">add</i>
+          </router-link>
+        </a>
+      </div>
     </div>
-    <div class="dashboard">
-      <div
-        class="card amber accent-1"
-        v-for="activity in activities"
-        :key="activity.id"
-      >
-        <div class="card-content">
-          <i class="material-icons delete" @click="deleteActivity(activity.id)"
-            >delete</i
-          >
-          <h2 class="teal-text">{{ activity.title }}</h2>
-          <ul class="details">
-            <li v-for="(details, index) in activity.details" :key="index">
-              <span class="chip">{{ details }}</span>
-            </li>
-          </ul>
+    <div class="section-1">
+      <div class="dashboard section-1 container">
+        <div
+          class="card amber accent-1"
+          v-for="activity in activities"
+          :key="activity.id"
+        >
+          <div class="card-content">
+            <i
+              class="material-icons delete"
+              @click="deleteActivity(activity.id)"
+              >delete</i
+            >
+            <h2 class="teal-text">{{ activity.title }}</h2>
+            <ul class="details">
+              <li v-for="(details, index) in activity.details" :key="index">
+                <span class="chip">{{ details }}</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +84,15 @@ export default {
 </script>
 
 <style>
+.header {
+  max-width: 70%;
+  margin: 30px auto;
+}
+.section-1 {
+  background-color: #80cbc4;
+  max-width: 100%;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
