@@ -88,8 +88,9 @@ export default {
   max-width: 70%;
   margin: 30px auto;
 }
+
 .section-1 {
-  background-color: #80cbc4;
+  background: #80cbc4;
   max-width: 100%;
 }
 
@@ -98,6 +99,8 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-top: 60px;
+  max-width: 80%;
+  /* background: #80cbc4; */
 }
 
 .dashboard h2 {
