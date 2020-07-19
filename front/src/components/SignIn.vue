@@ -1,29 +1,36 @@
 <template>
-  <div class="signin container">
+  <v-container class="signin">
     <div class="moxi-image">
       <v-img
         :src="require('../assets/animal.svg')"
-        class="moxi my-3"
+        class="moxi"
+        aspect-ratio="1.7"
         contain
-        height="200"
-      />
+      ></v-img>
     </div>
     <div class="plant-image">
       <v-img
-        class="plant my-3"
-        contain
-        height="200"
+        class="plant"
         :src="require('../assets/Leaves_object.svg')"
-      />
+      ></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-2"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-3"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-4" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-4"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="title teal-text center-align">
       <h2>Welcome Back!</h2>
@@ -57,13 +64,15 @@
         </button>
       </form>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
 export default {
   name: "SignIn",
-  data() {},
+  // data() {
+  //   return;
+  // },
 };
 </script>
 
@@ -75,7 +84,7 @@ body {
 .signin {
   margin-top: 100px;
   padding: 20px;
-  max-width: 500px;
+  max-width: 200px;
   background-color: #ffd15c;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);

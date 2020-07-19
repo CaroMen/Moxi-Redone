@@ -1,19 +1,29 @@
 <template>
-  <div class="signin container">
+  <v-container class="signin container">
     <div class="moxi-image">
-      <v-img class="moxi" :src="require('../assets/animal.svg')" />
+      <v-img class="moxi" :src="require('../assets/animal.svg')"></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant" :src="require('../assets/Leaves_object.svg')" />
+      <v-img class="plant" :src="require('../assets/Leaves_object.svg')">
+      </v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-2"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-3"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="plant-image">
-      <v-img class="plant-4" :src="require('../assets/Leaves_object.svg')" />
+      <v-img
+        class="plant-4"
+        :src="require('../assets/Leaves_object.svg')"
+      ></v-img>
     </div>
     <div class="title teal-text center-align">
       <h2>Welcome!</h2>
@@ -57,7 +67,7 @@
         </button>
       </form>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
