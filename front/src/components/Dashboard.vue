@@ -1,19 +1,19 @@
 <template>
-  <div class="">
+  <div class="background">
     <!-- <v-parallax
       src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
     ></v-parallax> -->
     <div class="header">
+      <div class="parallax-container">
+        <div class="parallax">
+          <v-parallax
+            src="https://images.unsplash.com/photo-1533787896899-91b040188f57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1020&q=80"
+            class="responsive-img"
+          ></v-parallax>
+        </div>
+      </div>
       <div class="welcome center">
         <h2>I dont know what will go here</h2>
-      </div>
-      <div class="card add-act container amber accent-1 center teal-text">
-        <h2>Add New Activity</h2>
-        <a href class="btn-floating btn-large halfway-fab teal">
-          <router-link :to="{ name: 'AddActivity' }">
-            <i class="material-icons add">add</i>
-          </router-link>
-        </a>
       </div>
     </div>
     <div class="section-1">
@@ -23,6 +23,11 @@
           v-for="activity in activities"
           :key="activity.id"
         >
+          <a href class="btn-floating btn-large halfway-fab teal">
+            <router-link :to="{ name: 'AddActivity' }">
+              <i class="material-icons edit">edit</i>
+            </router-link>
+          </a>
           <div class="card-content">
             <i
               class="material-icons delete"
@@ -37,10 +42,25 @@
             </ul>
           </div>
         </div>
+        <div class="card add-act container amber accent-1 teal-text">
+          <h2 class="title">Add New Activity</h2>
+          <a href class="btn-floating btn-large halfway-fab teal">
+            <router-link :to="{ name: 'AddActivity' }">
+              <i class="material-icons add">add</i>
+            </router-link>
+          </a>
+        </div>
       </div>
     </div>
     <div class="calendar">
-      <h2>Hello</h2>
+      <div class="parallax-container">
+        <div class="parallax"><img src="../assets/unsplash.jpg" /></div>
+      </div>
+      <div class="row">
+        <div class="grid-example col s12 m6">
+          <span class="flow-text">Add A Task To Your Calendar</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -90,8 +110,11 @@ export default {
 }
 
 .section-1 {
-  background: #80cbc4;
+  background: #d1ffc6;
   max-width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dashboard {
@@ -128,5 +151,14 @@ export default {
 
 .add-act {
   position: relative;
+}
+
+/* .background {
+  /* background: #e6e8e6; */
+
+.add-act h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 0;
 }
 </style>
