@@ -7,7 +7,7 @@
       <div class="parallax-container">
         <div class="parallax">
           <v-parallax
-            src="https://images.unsplash.com/photo-1533787896899-91b040188f57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1020&q=80"
+            src="../assets/unsplash.jpg"
             class="responsive-img"
           ></v-parallax>
         </div>
