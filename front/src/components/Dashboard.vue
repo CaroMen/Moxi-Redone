@@ -1,21 +1,12 @@
 <template>
   <div class="background">
-    <!-- <v-parallax
-      src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-    ></v-parallax> -->
-    <div class="header">
-      <div class="parallax-container">
-        <div class="parallax">
-          <v-parallax
-            src="../assets/unsplash.jpg"
-            class="responsive-img"
-          ></v-parallax>
+    <v-parallax src="../assets/water.jpeg" height="700" class="parallax">
+      <div class="header">
+        <div class="welcome center">
+          <h2>I dont know what will go here</h2>
         </div>
       </div>
-      <div class="welcome center">
-        <h2>I dont know what will go here</h2>
-      </div>
-    </div>
+    </v-parallax>
     <div class="section-1">
       <div class="dashboard section-1 container">
         <div
@@ -53,14 +44,13 @@
       </div>
     </div>
     <div class="calendar">
-      <div class="parallax-container">
-        <div class="parallax"><img src="../assets/unsplash.jpg" /></div>
-      </div>
-      <div class="row">
-        <div class="grid-example col s12 m6">
-          <span class="flow-text">Add A Task To Your Calendar</span>
+      <v-parallax src="../assets/water.jpeg" height="700" class="parallax">
+        <div class="row">
+          <div class="grid-example col s12 m6">
+            <span class="flow-text">Add A Task To Your Calendar</span>
+          </div>
         </div>
-      </div>
+      </v-parallax>
     </div>
   </div>
 </template>
@@ -104,16 +94,25 @@ export default {
 </script>
 
 <style>
+.parallax {
+  height: 100%;
+  width: 100%;
+  /* margin: 0px auto; */
+  margin-bottom: -70px;
+  /* margin-right: -30px; */
+  object-fit: cover;
+}
+
 .header {
-  max-width: 70%;
-  margin: 30px auto;
+  max-width: 100%;
+  /* margin: 30px auto; */
 }
 
 .section-1 {
   background: #d1ffc6;
   max-width: 100%;
   margin-top: 40px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -122,6 +121,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
   margin-top: 60px;
+  margin-bottom: 60px;
   max-width: 80%;
   /* background: #80cbc4; */
 }

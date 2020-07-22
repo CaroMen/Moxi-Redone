@@ -2,35 +2,21 @@
   <v-container class="signin">
     <div class="moxi-image">
       <v-img
-        :src="require('../assets/animal.svg')"
+        src="https://image.flaticon.com/icons/svg/3142/3142608.svg"
         class="moxi"
-        aspect-ratio="1.7"
-        contain
       ></v-img>
     </div>
     <div class="plant-image">
-      <v-img
-        class="plant"
-        :src="require('../assets/Leaves_object.svg')"
-      ></v-img>
+      <!-- <v-img :eager="true" class="plant" contain :src="items[1]"></v-img> -->
     </div>
     <div class="plant-image">
-      <v-img
-        class="plant-2"
-        :src="require('../assets/Leaves_object.svg')"
-      ></v-img>
+      <!-- <v-img class="plant-2" contain :src="items[1]"></v-img> -->
     </div>
     <div class="plant-image">
-      <v-img
-        class="plant-3"
-        :src="require('../assets/Leaves_object.svg')"
-      ></v-img>
+      <!-- <v-img class="plant-3" contain :src="items[1]"></v-img> -->
     </div>
     <div class="plant-image">
-      <v-img
-        class="plant-4"
-        :src="require('../assets/Leaves_object.svg')"
-      ></v-img>
+      <!-- <v-img class="plant-4" contain :src="items[1]"></v-img> -->
     </div>
     <div class="title teal-text center-align">
       <h2>Welcome Back!</h2>
@@ -70,9 +56,14 @@
 <script>
 export default {
   name: "SignIn",
-  // data() {
-  //   return;
-  // },
+  data() {
+    return {
+      images: {
+        moxi: require("../assets/animal.svg"),
+        leaves: require("../assets/Leaves_object.svg"),
+      },
+    };
+  },
 };
 </script>
 
@@ -121,7 +112,7 @@ body {
   width: 100%;
   height: auto;
   top: 100px;
-  left: 300px;
+  left: 50px;
   z-index: -1;
 }
 
