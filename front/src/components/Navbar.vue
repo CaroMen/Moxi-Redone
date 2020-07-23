@@ -1,9 +1,9 @@
 <template>
   <div class="navbar">
-    <nav class="nav-extended amber lighten-4">
+    <nav class="nav-extended">
       <div class="nav-content">
         <router-link to>
-          <span class="nav-title teal-text">MOXI</span>
+          <span class="nav-title amber-text">MOXI</span>
         </router-link>
         <router-link to>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -29,7 +29,7 @@
             </li>
           </ul>
         </router-link>
-        <a href class="btn-floating btn-large halfway-fab teal">
+        <a href class="btn-floating btn-large halfway-fab amber">
           <router-link to>
             <i class="material-icons">account_circle</i>
           </router-link>
@@ -44,7 +44,7 @@ export default {
   name: "Navbar",
   data() {
     return {};
-  }
+  },
 };
 </script>
 
@@ -52,10 +52,15 @@ export default {
 .navbar nav {
   padding: 0 60px;
   font-family: Lato, Helvetica, Arial, sans-serif;
+  background-color: #cac9cf;
 }
 
 #nav-mobile {
   padding: 30px 150px;
+}
+
+.btn {
+  background-color: #c1dbb3;
 }
 
 /* iPad */

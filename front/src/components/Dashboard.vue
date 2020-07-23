@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <v-parallax src="../assets/water.jpeg" height="700" class="parallax">
+    <v-parallax src="../assets/pattern.jpeg" height="900" class="parallax">
       <div class="header">
         <div class="welcome center">
           <h2>I dont know what will go here</h2>
@@ -95,10 +95,10 @@ export default {
 
 <style>
 .parallax {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   /* margin: 0px auto; */
-  margin-bottom: -70px;
+  margin-bottom: -220px;
   /* margin-right: -30px; */
   object-fit: cover;
 }
