@@ -51,6 +51,7 @@ export default {
 <style>
 body {
   background-color: #f0f2ef;
+  color: white;
 }
 
 .text {
@@ -69,6 +70,7 @@ body {
 
 #nav-mobile {
   padding: 30px 150px;
+  color: white;
 }
 
 .btn-flat {

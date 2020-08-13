@@ -7,6 +7,18 @@
       </div>
     </div>
     <!-- </v-parallax> -->
+    <v-card>
+      <v-tabs background-color="#8E7C7A" color="deep-purple accent-4" right>
+        <v-tab>
+          <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
+        </v-tab>
+        <v-tab>
+          <router-link :to="{ name: 'AddActivity' }">Add Activity</router-link>
+        </v-tab>
+        <v-tab>City</v-tab>
+        <v-tab>Abstract</v-tab>
+      </v-tabs>
+    </v-card>
     <div class="section-1">
       <div class="dashboard section-1 container">
         <div class="card" v-for="activity in activities" :key="activity.id">
@@ -17,7 +29,7 @@
           </a>
           <div class="card-content">
             <i class="material-icons delete" @click="deleteActivity(activity.id)">delete</i>
-            <h2 class="teal-text">{{ activity.title }}</h2>
+            <h2 class="text">{{ activity.title }}</h2>
             <ul class="details">
               <li v-for="(details, index) in activity.details" :key="index">
                 <span class="chip">{{ details }}</span>
@@ -26,23 +38,17 @@
           </div>
         </div>
         <div class="card add-act teal-text">
-          <h2 class="title">Add New Activity</h2>
+          <!-- <h2 class="title">Add New Activity</h2>
           <a href class="btn-floating btn-large halfway-fab">
             <router-link :to="{ name: 'AddActivity' }">
               <i class="material-icons add">add</i>
             </router-link>
-          </a>
+          </a>-->
+          <router-link :to="{ name: 'AddActivity' }">
+            <a class="waves-effect waves-light btn-large redirects">Button</a>
+          </router-link>
         </div>
       </div>
-    </div>
-    <div class="calendar">
-      <!-- <v-parallax src="../assets/water.jpeg" height="700" class="parallax"> -->
-      <div class="row">
-        <div class="grid-example col s12 m6">
-          <span class="flow-text">Add A Task To Your Calendar</span>
-        </div>
-      </div>
-      <!-- </v-parallax> -->
     </div>
   </div>
 </template>
@@ -109,6 +115,11 @@ export default {
 
 .section-1 .btn-floating {
   background-color: #cf605c;
+}
+
+.redirects {
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .dashboard {
