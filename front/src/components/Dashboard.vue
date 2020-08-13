@@ -8,14 +8,14 @@
     </div>
     <!-- </v-parallax> -->
     <v-card>
-      <v-tabs background-color="#8E7C7A" color="deep-purple accent-4" right>
+      <v-tabs background-color="#8E7C7A" color="blue-grey lighten-5" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
         </v-tab>
         <v-tab>
           <router-link :to="{ name: 'AddActivity' }">Add Activity</router-link>
         </v-tab>
-        <v-tab>City</v-tab>
+        <v-tab>Calendar</v-tab>
         <v-tab>Abstract</v-tab>
       </v-tabs>
     </v-card>

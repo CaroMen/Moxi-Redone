@@ -1,58 +1,62 @@
-<template>
-  <v-container class="signin container">
-    <!-- <div class="moxi-image"> -->
-    <v-img class="moxi" :src="require('../assets/animal.svg')"></v-img>
-    <!-- </div> -->
-    <!-- <div class="plant-image"> -->
-    <!-- <v-img class="plant" :src="require('../assets/Leaves_object.svg')"></v-img> -->
-    <!-- </div>
-    <div class="plant-image">-->
-    <!-- <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')"></v-img> -->
-    <!-- </div>
-    <div class="plant-image">-->
-    <!-- <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')"></v-img> -->
-    <!-- </div>
-    <div class="plant-image">-->
-    <!-- <v-img
+<template class="bg-container">
+<body>
+  <div class="container">
+    <v-container class="signup signup-container">
+      <!-- <div class="moxi-image"> -->
+      <v-img class="moxi" :src="require('../assets/animal.svg')"></v-img>
+      <!-- </div> -->
+      <!-- <div class="plant-image"> -->
+      <!-- <v-img class="plant" :src="require('../assets/Leaves_object.svg')"></v-img> -->
+      <!-- </div>
+      <div class="plant-image">-->
+      <!-- <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')"></v-img> -->
+      <!-- </div>
+      <div class="plant-image">-->
+      <!-- <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')"></v-img> -->
+      <!-- </div>
+      <div class="plant-image">-->
+      <!-- <v-img
       class="plant-4"
       :src="require('../assets/Leaves_object.svg')"
-    ></v-img>-->
-    <!-- </div> -->
-    <div class="title teal-text center-align">
-      <h2>Welcome!</h2>
-    </div>
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="first_name" type="text" class="validate" />
-        <label for="first_name">First Name</label>
+      ></v-img>-->
+      <!-- </div> -->
+      <div class="title white-text center-align">
+        <h2>Welcome!</h2>
       </div>
-      <div class="input-field col s6">
-        <input id="last_name" type="text" class="validate" />
-        <label for="last_name">Last Name</label>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate" />
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" />
+          <label for="last_name">Last Name</label>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <form class="col s12">
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="password" type="password" class="validate" />
-            <label class="active" for="password">Email</label>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" />
+              <label class="active" for="password">Email</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate" />
-            <label class="active" for="email">Password</label>
-            <span class="helper-text" data-error="wrong" data-success="right"></span>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" />
+              <label class="active" for="email">Password</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
+            </div>
           </div>
-        </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">
-          Submit
-          <i class="material-icons right">send</i>
-        </button>
-      </form>
-    </div>
-  </v-container>
+          <button class="btn waves-effect waves-light" type="submit" name="action">
+            Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </v-container>
+  </div>
+</body>
 </template>
 
 <script>
@@ -64,20 +68,26 @@ export default {
 
 <style>
 body {
-  background: #f5f4f6;
+  background: #f0f2ef;
+  margin-top: -10px;
+  padding-bottom: 20px;
 }
 
-.signin {
+.row {
+  color: white;
+}
+
+.signup {
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
-  background-color: #ffd15c;
+  background-color: #cf605c;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to bottom, #ffe299, #ffd15c);
+  background: linear-gradient(to bottom, #494832, #8e7c7a);
 }
 
-.signin h2 {
+.signup h2 {
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 

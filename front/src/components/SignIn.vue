@@ -60,10 +60,10 @@ body {
   margin-top: 100px;
   padding: 20px;
   max-width: 200px;
-  background-color: #ffd15c;
+  background-color: #cf605c;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to bottom, #ffe299, #ffd15c);
+  background: linear-gradient(to bottom, #d6a964, #cf605c);
 }
 
 .signin h2 {
