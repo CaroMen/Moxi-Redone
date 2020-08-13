@@ -1,10 +1,7 @@
 <template>
   <v-container class="signin">
     <div class="moxi-image">
-      <v-img
-        src="https://image.flaticon.com/icons/svg/3142/3142608.svg"
-        class="moxi"
-      ></v-img>
+      <v-img src="https://image.flaticon.com/icons/svg/3142/3142608.svg" class="moxi"></v-img>
     </div>
     <div class="plant-image">
       <!-- <v-img :eager="true" class="plant" contain :src="items[1]"></v-img> -->
@@ -33,18 +30,10 @@
           <div class="input-field col s12">
             <input id="email" type="email" class="validate" />
             <label class="active" for="email">Password</label>
-            <span
-              class="helper-text"
-              data-error="wrong"
-              data-success="right"
-            ></span>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
           </div>
         </div>
-        <button
-          class="btn waves-effect waves-light"
-          type="submit"
-          name="action"
-        >
+        <button class="btn waves-effect waves-light" type="submit" name="action">
           Submit
           <i class="material-icons right">send</i>
         </button>
@@ -57,19 +46,14 @@
 export default {
   name: "SignIn",
   data() {
-    return {
-      images: {
-        moxi: require("../assets/animal.svg"),
-        leaves: require("../assets/Leaves_object.svg"),
-      },
-    };
+    return {};
   },
 };
 </script>
 
 <style>
 body {
-  background: #f5f4f6;
+  background: #f0f2ef;
 }
 
 .signin {

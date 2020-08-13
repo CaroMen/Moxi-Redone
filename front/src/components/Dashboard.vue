@@ -1,30 +1,22 @@
 <template>
   <div class="background">
-    <v-parallax src="../assets/pattern.jpeg" height="900" class="parallax">
-      <div class="header">
-        <div class="welcome center">
-          <h2>I dont know what will go here</h2>
-        </div>
+    <!-- <v-parallax src="../assets/pattern.jpeg" height="900" class="parallax"> -->
+    <div class="header">
+      <div class="welcome center">
+        <h2>I dont know what will go here</h2>
       </div>
-    </v-parallax>
+    </div>
+    <!-- </v-parallax> -->
     <div class="section-1">
       <div class="dashboard section-1 container">
-        <div
-          class="card amber accent-1"
-          v-for="activity in activities"
-          :key="activity.id"
-        >
-          <a href class="btn-floating btn-large halfway-fab teal">
+        <div class="card" v-for="activity in activities" :key="activity.id">
+          <a href class="btn-floating btn-large halfway-fab">
             <router-link :to="{ name: 'AddActivity' }">
               <i class="material-icons edit">edit</i>
             </router-link>
           </a>
           <div class="card-content">
-            <i
-              class="material-icons delete"
-              @click="deleteActivity(activity.id)"
-              >delete</i
-            >
+            <i class="material-icons delete" @click="deleteActivity(activity.id)">delete</i>
             <h2 class="teal-text">{{ activity.title }}</h2>
             <ul class="details">
               <li v-for="(details, index) in activity.details" :key="index">
@@ -33,9 +25,9 @@
             </ul>
           </div>
         </div>
-        <div class="card add-act container amber accent-1 teal-text">
+        <div class="card add-act teal-text">
           <h2 class="title">Add New Activity</h2>
-          <a href class="btn-floating btn-large halfway-fab teal">
+          <a href class="btn-floating btn-large halfway-fab">
             <router-link :to="{ name: 'AddActivity' }">
               <i class="material-icons add">add</i>
             </router-link>
@@ -44,13 +36,13 @@
       </div>
     </div>
     <div class="calendar">
-      <v-parallax src="../assets/water.jpeg" height="700" class="parallax">
-        <div class="row">
-          <div class="grid-example col s12 m6">
-            <span class="flow-text">Add A Task To Your Calendar</span>
-          </div>
+      <!-- <v-parallax src="../assets/water.jpeg" height="700" class="parallax"> -->
+      <div class="row">
+        <div class="grid-example col s12 m6">
+          <span class="flow-text">Add A Task To Your Calendar</span>
         </div>
-      </v-parallax>
+      </div>
+      <!-- </v-parallax> -->
     </div>
   </div>
 </template>
@@ -94,26 +86,29 @@ export default {
 </script>
 
 <style>
-.parallax {
-  /* height: 100%; */
-  width: 100%;
-  /* margin: 0px auto; */
-  margin-bottom: -220px;
-  /* margin-right: -30px; */
-  object-fit: cover;
+.background {
+  background-color: #f0f2ef;
+  margin-top: -10px;
 }
 
 .header {
-  max-width: 100%;
-  /* margin: 30px auto; */
+  width: 100%;
+}
+
+.card {
+  background-color: #8e7c7a;
 }
 
 .section-1 {
-  background: #d1ffc6;
+  background: #f0f2ef;
   max-width: 100%;
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+
+.section-1 .btn-floating {
+  background-color: #cf605c;
 }
 
 .dashboard {
@@ -145,7 +140,7 @@ export default {
   top: 4px;
   right: 4px;
   cursor: pointer;
-  color: #aaa;
+  color: #f0f2ef;
   font-size: 1.4em;
 }
 

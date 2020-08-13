@@ -4,25 +4,19 @@
     <v-img class="moxi" :src="require('../assets/animal.svg')"></v-img>
     <!-- </div> -->
     <!-- <div class="plant-image"> -->
-    <v-img class="plant" :src="require('../assets/Leaves_object.svg')"> </v-img>
+    <!-- <v-img class="plant" :src="require('../assets/Leaves_object.svg')"></v-img> -->
     <!-- </div>
-    <div class="plant-image"> -->
-    <v-img
-      class="plant-2"
-      :src="require('../assets/Leaves_object.svg')"
-    ></v-img>
+    <div class="plant-image">-->
+    <!-- <v-img class="plant-2" :src="require('../assets/Leaves_object.svg')"></v-img> -->
     <!-- </div>
-    <div class="plant-image"> -->
-    <v-img
-      class="plant-3"
-      :src="require('../assets/Leaves_object.svg')"
-    ></v-img>
+    <div class="plant-image">-->
+    <!-- <v-img class="plant-3" :src="require('../assets/Leaves_object.svg')"></v-img> -->
     <!-- </div>
-    <div class="plant-image"> -->
-    <v-img
+    <div class="plant-image">-->
+    <!-- <v-img
       class="plant-4"
       :src="require('../assets/Leaves_object.svg')"
-    ></v-img>
+    ></v-img>-->
     <!-- </div> -->
     <div class="title teal-text center-align">
       <h2>Welcome!</h2>
@@ -49,18 +43,10 @@
           <div class="input-field col s12">
             <input id="email" type="email" class="validate" />
             <label class="active" for="email">Password</label>
-            <span
-              class="helper-text"
-              data-error="wrong"
-              data-success="right"
-            ></span>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
           </div>
         </div>
-        <button
-          class="btn waves-effect waves-light"
-          type="submit"
-          name="action"
-        >
+        <button class="btn waves-effect waves-light" type="submit" name="action">
           Submit
           <i class="material-icons right">send</i>
         </button>

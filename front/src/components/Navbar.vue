@@ -1,35 +1,35 @@
 <template>
   <div class="navbar">
-    <nav class="nav-extended">
+    <nav class="nav-extended z-depth-0">
       <div class="nav-content">
         <router-link to>
-          <span class="nav-title amber-text">MOXI</span>
+          <span class="nav-title text">MOXI</span>
         </router-link>
         <router-link to>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
               <router-link :to="{ name: 'Index' }">
-                <a class="waves-effect waves-dark btn">Home</a>
+                <a class="btn-flat text">Home</a>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'Dashboard' }">
-                <a class="waves-effect waves-dark btn">Dashboard</a>
+                <a class="btn-flat text">Dashboard</a>
               </router-link>
             </li>
             <li>
-              <router-link :to="{ name: 'SignIn' }">
-                <a class="waves-effect waves-dark btn">Sign In</a>
+              <router-link active-class="active" :to="{ name: 'SignIn' }">
+                <a class="btn-flat text">Sign In</a>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'SignUp' }">
-                <a class="waves-effect waves-dark btn">Sign Up</a>
+                <a class="btn-flat text">Sign Up</a>
               </router-link>
             </li>
           </ul>
         </router-link>
-        <a href class="btn-floating btn-large halfway-fab amber">
+        <a href class="btn-floating btn-large halfway-fab">
           <router-link to>
             <i class="material-icons">account_circle</i>
           </router-link>
@@ -49,18 +49,34 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #f0f2ef;
+}
+
+.text {
+  color: white;
+}
+
 .navbar nav {
   padding: 0 60px;
   font-family: Lato, Helvetica, Arial, sans-serif;
-  background-color: #cac9cf;
+  background-color: #f0f2ef;
+}
+
+.nav-title {
+  color: #d6a964;
 }
 
 #nav-mobile {
   padding: 30px 150px;
 }
 
-.btn {
-  background-color: #c1dbb3;
+.btn-flat {
+  background-color: #cf605c;
+}
+
+.btn-floating {
+  background-color: #d6a964;
 }
 
 /* iPad */
