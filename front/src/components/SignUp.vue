@@ -81,10 +81,10 @@ body {
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
-  background-color: #cf605c;
+  background-color: #8e7c7a;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to bottom, #494832, #8e7c7a);
+  /* background: linear-gradient(to bottom, #494832, #8e7c7a); */
 }
 
 .signup h2 {

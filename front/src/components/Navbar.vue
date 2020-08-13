@@ -74,7 +74,7 @@ body {
 }
 
 .btn-flat {
-  background-color: #cf605c;
+  background-color: #8e7c7a;
 }
 
 .btn-floating {
