@@ -68,9 +68,12 @@ export default {
 
 <style>
 body {
-  background: #f0f2ef;
+  background: #494832;
   margin-top: -10px;
   padding-bottom: 20px;
+}
+.container {
+  max-width: 500px;
 }
 
 .row {

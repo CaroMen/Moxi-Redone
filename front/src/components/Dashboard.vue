@@ -37,17 +37,17 @@
             </ul>
           </div>
         </div>
-        <div class="card add-act teal-text">
-          <!-- <h2 class="title">Add New Activity</h2>
+        <!-- <div class="card add-act teal-text"> -->
+        <!-- <h2 class="title">Add New Activity</h2>
           <a href class="btn-floating btn-large halfway-fab">
             <router-link :to="{ name: 'AddActivity' }">
               <i class="material-icons add">add</i>
             </router-link>
-          </a>-->
-          <router-link :to="{ name: 'AddActivity' }">
+        </a>-->
+        <!-- <router-link :to="{ name: 'AddActivity' }">
             <a class="waves-effect waves-light btn-large redirects">Button</a>
           </router-link>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ export default {
 
 <style>
 .background {
-  background-color: #f0f2ef;
+  background-color: #494832;
   margin-top: -10px;
 }
 
@@ -103,10 +103,11 @@ export default {
 
 .card {
   background-color: #8e7c7a;
+  border-radius: 10px;
 }
 
 .section-1 {
-  background: #f0f2ef;
+  background: #494832;
   max-width: 100%;
   margin-top: 40px;
   padding-top: 10px;

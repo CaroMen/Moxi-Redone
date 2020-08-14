@@ -27,13 +27,13 @@
                 <a class="btn-flat text">Sign Up</a>
               </router-link>
             </li>
+            <li>
+              <router-link to>
+                <a class="btn-flat text">Profile</a>
+              </router-link>
+            </li>
           </ul>
         </router-link>
-        <a href class="btn-floating btn-large halfway-fab">
-          <router-link to>
-            <i class="material-icons">account_circle</i>
-          </router-link>
-        </a>
       </div>
     </nav>
   </div>
@@ -50,7 +50,7 @@ export default {
 
 <style>
 body {
-  background-color: #f0f2ef;
+  background-color: #494832;
   color: white;
 }
 
@@ -61,7 +61,7 @@ body {
 .navbar nav {
   padding: 0 60px;
   font-family: Lato, Helvetica, Arial, sans-serif;
-  background-color: #f0f2ef;
+  background-color: #494832;
 }
 
 .nav-title {
@@ -69,12 +69,13 @@ body {
 }
 
 #nav-mobile {
-  padding: 30px 150px;
+  padding: 30px 10px;
   color: white;
 }
 
 .btn-flat {
   background-color: #8e7c7a;
+  border-radius: 10px;
 }
 
 .btn-floating {
