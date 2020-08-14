@@ -15,7 +15,9 @@
         <v-tab>
           <router-link :to="{ name: 'AddActivity' }">Add Activity</router-link>
         </v-tab>
-        <v-tab>Calendar</v-tab>
+        <v-tab>
+          <router-link :to="{ name: 'Calendar' }">Calendar</router-link>
+        </v-tab>
         <v-tab>Abstract</v-tab>
       </v-tabs>
     </v-card>

@@ -6,6 +6,7 @@ import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
 import Dashboard from "../components/Dashboard";
 import AddActivity from "../components/AddActivity";
+import Calendar from "../components/Calendar";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [{
         path: "/add-activity",
         name: "AddActivity",
         component: AddActivity,
+    },
+    {
+        path: "/calendar",
+        name: "Calendar",
+        component: Calendar,
     },
 ];
 

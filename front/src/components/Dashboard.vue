@@ -15,7 +15,9 @@
         <v-tab>
           <router-link :to="{ name: 'AddActivity' }">Add Activity</router-link>
         </v-tab>
-        <v-tab>Calendar</v-tab>
+        <v-tab>
+          <router-link :to="{ name: 'Calendar' }">Calendar</router-link>
+        </v-tab>
         <v-tab>Abstract</v-tab>
       </v-tabs>
     </v-card>
@@ -37,14 +39,14 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="card add-act teal-text"> -->
-        <!-- <h2 class="title">Add New Activity</h2>
+        <!-- <div class="card add-act teal-text">
+          <h2 class="title">Add New Activity</h2>
           <a href class="btn-floating btn-large halfway-fab">
             <router-link :to="{ name: 'AddActivity' }">
               <i class="material-icons add">add</i>
             </router-link>
-        </a>-->
-        <!-- <router-link :to="{ name: 'AddActivity' }">
+          </a>
+          <router-link :to="{ name: 'AddActivity' }">
             <a class="waves-effect waves-light btn-large redirects">Button</a>
           </router-link>
         </div>-->
