@@ -3,7 +3,7 @@
     <nav class="nav-extended z-depth-0">
       <div class="nav-content">
         <router-link to>
-          <span class="nav-title text">MOXI</span>
+          <span class="nav-title text">MOXI.</span>
         </router-link>
         <router-link to>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -66,6 +66,7 @@ body {
 
 .nav-title {
   color: #d6a964;
+  font-size: 50px;
 }
 
 #nav-mobile {
@@ -80,6 +81,24 @@ body {
 
 .btn-floating {
   background-color: #d6a964;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
 }
 
 /* iPad */

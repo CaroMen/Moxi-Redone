@@ -8,7 +8,7 @@
     </div>
     <!-- </v-parallax> -->
     <v-card>
-      <v-tabs background-color="#8E7C7A" color="blue-grey lighten-5" right>
+      <v-tabs background-color="#CF605C" color="blue-grey lighten-5" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
         </v-tab>

@@ -2,13 +2,16 @@
   <div class="background">
     <!-- <v-parallax src="../assets/pattern.jpeg" height="900" class="parallax"> -->
     <div class="header">
-      <div class="welcome center">
+      <!-- <div class="welcome center">
         <h2>I dont know what will go here</h2>
+      </div>-->
+      <div class="welcome">
+        <h3>Welcome</h3>
       </div>
     </div>
     <!-- </v-parallax> -->
     <v-card>
-      <v-tabs background-color="#8E7C7A" color="blue-grey lighten-5" right>
+      <v-tabs background-color="#CF605C" color="blue-grey lighten-5" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
         </v-tab>
@@ -31,6 +34,7 @@
           </a>
           <div class="card-content">
             <i class="material-icons delete" @click="deleteActivity(activity.id)">delete</i>
+            <i class="material-icons done" @click="deleteActivity(activity.id)">check_circle</i>
             <h2 class="text">{{ activity.title }}</h2>
             <ul class="details">
               <li v-for="(details, index) in activity.details" :key="index">
@@ -97,6 +101,11 @@ export default {
 .background {
   background-color: #494832;
   margin-top: -10px;
+  color: white;
+}
+
+.welcome {
+  margin-left: 10%;
 }
 
 .header {
@@ -114,6 +123,7 @@ export default {
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 20px;
+  margin-bottom: 200px;
 }
 
 .section-1 .btn-floating {
@@ -152,6 +162,15 @@ export default {
 .dashboard .delete {
   position: absolute;
   top: 4px;
+  right: 4px;
+  cursor: pointer;
+  color: #f0f2ef;
+  font-size: 1.4em;
+}
+
+.dashboard .done {
+  position: absolute;
+  top: 30px;
   right: 4px;
   cursor: pointer;
   color: #f0f2ef;
