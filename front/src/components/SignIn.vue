@@ -19,7 +19,7 @@
     <div class="title white-text center-align">
       <h2>Welcome Back!</h2>
     </div>
-    <div class="container">
+    <div class="cont">
       <div class="row">
         <form class="col s12">
           <div class="row">
@@ -57,19 +57,20 @@ export default {
 
 <style>
 body {
-  background: #494832;
+  /* background: #603ce7; */
 }
 
-.container {
-  max-width: 200px;
+.cont {
+  max-width: 500px;
+  background-color: #603ce7 !important;
 }
 
 .signin {
   margin-top: 100px;
   margin-bottom: 130px;
   /* padding: 20px; */
-  /* max-width: 50px; */
-  background-color: #8e7c7a;
+  max-width: 500px;
+  background-color: #603ce7 !important;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
   /* background: linear-gradient(to bottom, #d6a964, #cf605c); */

@@ -11,7 +11,7 @@
     </div>
     <!-- </v-parallax> -->
     <v-card>
-      <v-tabs background-color="#CF605C" color="blue-grey lighten-5" right>
+      <v-tabs background-color="#603CE7" color="#F0C345" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
         </v-tab>
@@ -24,7 +24,7 @@
         <v-tab>Abstract</v-tab>
       </v-tabs>
     </v-card>
-    <div class="section-1">
+    <div class="section-1-bg">
       <div class="dashboard section-1 container">
         <div class="card" v-for="activity in activities" :key="activity.id">
           <a href class="btn-floating btn-large halfway-fab">
@@ -98,8 +98,12 @@ export default {
 </script>
 
 <style>
+body {
+  background-color: #1e1935 !important;
+}
+
 .background {
-  background-color: #494832;
+  background-color: #1e1935;
   margin-top: -10px;
   color: white;
 }
@@ -113,12 +117,12 @@ export default {
 }
 
 .card {
-  background-color: #8e7c7a;
+  background-color: #b63674;
   border-radius: 10px;
 }
 
 .section-1 {
-  background: #494832;
+  background-color: #1e1935 !important;
   max-width: 100%;
   margin-top: 40px;
   padding-top: 10px;
@@ -126,8 +130,13 @@ export default {
   margin-bottom: 200px;
 }
 
+.section-1-bg {
+  background: #1e1935;
+}
+
 .section-1 .btn-floating {
-  background-color: #cf605c;
+  /* background-color: #cf605c; */
+  background-color: #603ce7;
 }
 
 .redirects {
@@ -142,7 +151,7 @@ export default {
   margin-top: 60px;
   margin-bottom: 60px;
   max-width: 80%;
-  /* background: #80cbc4; */
+  background: #1e1935;
 }
 
 .dashboard h2 {
@@ -164,7 +173,8 @@ export default {
   top: 4px;
   right: 4px;
   cursor: pointer;
-  color: #f0f2ef;
+  /* color: #f0f2ef; */
+  color: #898fae;
   font-size: 1.4em;
 }
 
@@ -173,7 +183,8 @@ export default {
   top: 30px;
   right: 4px;
   cursor: pointer;
-  color: #f0f2ef;
+  /* color: #f0f2ef; */
+  color: #898fae;
   font-size: 1.4em;
 }
 
@@ -188,5 +199,18 @@ export default {
   font-size: 1.8em;
   text-align: center;
   margin-top: 0;
+}
+
+a {
+  color: inherit !important;
+} /* Unvisited link  */
+a:visited {
+  color: inherit !important;
+} /* Visited link    */
+a:hover {
+  color: inherit !important;
+} /* Mouse over link */
+a:active {
+  color: inherit !important;
 }
 </style>

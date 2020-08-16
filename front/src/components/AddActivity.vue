@@ -8,7 +8,7 @@
     </div>
     <!-- </v-parallax> -->
     <v-card>
-      <v-tabs background-color="#CF605C" color="blue-grey lighten-5" right>
+      <v-tabs background-color="#603CE7" color="#F0C345" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
         </v-tab>
@@ -149,6 +149,6 @@ body {
 }
 
 .btn {
-  background: #cf605c;
+  background: #898fae;
 }
 </style>

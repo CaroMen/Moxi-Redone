@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       myStyle: {
-        backgroundColor: "#494832",
+        backgroundColor: "#1E1935",
       },
     };
   },
@@ -30,7 +30,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 body {
-  background: #494832;
+  background-color: #1e1935;
 }
 
 .Index {

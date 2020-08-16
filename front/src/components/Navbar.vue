@@ -9,27 +9,27 @@
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
               <router-link :to="{ name: 'Index' }">
-                <a class="btn-flat text">Home</a>
+                <a>Home</a>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'Dashboard' }">
-                <a class="btn-flat text">Dashboard</a>
+                <a>Dashboard</a>
               </router-link>
             </li>
             <li>
               <router-link active-class="active" :to="{ name: 'SignIn' }">
-                <a class="btn-flat text">Sign In</a>
+                <a>Sign In</a>
               </router-link>
             </li>
             <li>
               <router-link :to="{ name: 'SignUp' }">
-                <a class="btn-flat text">Sign Up</a>
+                <a>Sign Up</a>
               </router-link>
             </li>
             <li>
               <router-link to>
-                <a class="btn-flat text">Profile</a>
+                <a>Profile</a>
               </router-link>
             </li>
           </ul>
@@ -50,55 +50,28 @@ export default {
 
 <style>
 body {
-  background-color: #494832;
-  color: white;
+  background-color: #1e1935;
+  color: #f0c345;
 }
 
 .text {
-  color: white;
+  color: #f0c345;
 }
 
 .navbar nav {
   padding: 0 60px;
   font-family: Lato, Helvetica, Arial, sans-serif;
-  background-color: #494832;
+  background-color: #1e1935;
 }
 
 .nav-title {
-  color: #d6a964;
+  color: #603ce7;
   font-size: 50px;
 }
 
 #nav-mobile {
   padding: 30px 10px;
-  color: white;
-}
-
-.btn-flat {
-  background-color: #8e7c7a;
-  border-radius: 10px;
-}
-
-.btn-floating {
-  background-color: #d6a964;
-}
-
-a {
-  text-decoration: none;
-  color: red;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:focus {
-  text-decoration: none;
-}
-a:hover,
-a:active {
-  text-decoration: none;
+  color: #f0c345;
 }
 
 /* iPad */

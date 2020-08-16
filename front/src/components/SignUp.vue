@@ -1,6 +1,6 @@
 <template class="bg-container">
 <body>
-  <div class="container">
+  <div class="container first">
     <v-container class="signup signup-container">
       <!-- <div class="moxi-image"> -->
       <v-img class="moxi" :src="require('../assets/animal.svg')"></v-img>
@@ -68,12 +68,14 @@ export default {
 
 <style>
 body {
-  background: #494832;
+  background-color: #1e1935;
   margin-top: -10px;
   padding-bottom: 20px;
 }
+
 .container {
   max-width: 500px;
+  background-color: #1e1935;
 }
 
 .row {
@@ -84,7 +86,7 @@ body {
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
-  background-color: #8e7c7a;
+  background-color: #603ce7;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 15px 30px rgba(0, 0, 0, 0.25);
   /* background: linear-gradient(to bottom, #494832, #8e7c7a); */
