@@ -87,8 +87,8 @@
           <!-- Add event dialog -->
           <v-dialog v-model="dialog" max-width="500">
             <v-card>
-              <v-container>
-                <v-form @submit.prevent="addEvent">
+              <v-container class="container-cal">
+                <v-form @submit.prevent="addEvent" class="cal-form">
                   <v-text-field
                     v-model="name"
                     type="text"
@@ -282,7 +282,7 @@ export default {
         this.details = "";
         this.start = "";
         this.end = "";
-        this.color = "";
+        this.color = "#1976D2";
       } else {
         alert("Name, start, and end date are required");
       }
@@ -348,6 +348,7 @@ export default {
 <style>
 .section1 {
   background-color: #1e1935;
+  /* background-color: white !important; */
   margin-top: -10px;
   margin-bottom: 500px;
 }
@@ -356,5 +357,12 @@ export default {
   max-width: 1000px;
   margin-left: 220px;
   margin-top: -350px;
+}
+
+.cal-form {
+  background-color: white;
+}
+.container-cal {
+  background-color: white;
 }
 </style>
