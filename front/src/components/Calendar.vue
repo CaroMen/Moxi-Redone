@@ -114,6 +114,13 @@
                     type="color"
                     label="color (click to open menu)"
                   ></v-text-field>
+                  <v-btn
+                    type="submit"
+                    color="primary"
+                    class="mr-4"
+                    @click.stop="dialog = false"
+                    >Create Event</v-btn
+                  >
                 </v-form>
               </v-container>
             </v-card>
@@ -260,6 +267,25 @@ export default {
         events.push(appData);
       });
       this.events = events;
+    },
+    async addEvent() {
+      if (this.name && this.start && this.end) {
+        await db.collection("calEvent").add({
+          name: this.name,
+          details: this.details,
+          start: this.start,
+          end: this.end,
+          color: this.color,
+        });
+        this.getEvents();
+        this.name = "";
+        this.details = "";
+        this.start = "";
+        this.end = "";
+        this.color = "";
+      } else {
+        alert("Name, start, and end date are required");
+      }
     },
     async updateEvent(ev) {
       await db
