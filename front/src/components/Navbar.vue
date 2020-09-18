@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar grid">
+  <div class="navbar nav-wrapper grid">
     <nav class="nav-extended z-depth-0">
       <div class="nav-content">
         <router-link to>
