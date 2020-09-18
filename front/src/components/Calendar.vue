@@ -354,9 +354,13 @@ export default {
 }
 
 .cal {
-  max-width: 1000px;
+  /* max-width: 1000px;
   margin-left: 220px;
-  margin-top: -350px;
+  margin-top: -350px; */
+  position: relative;
+  top: -30%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .cal-form {

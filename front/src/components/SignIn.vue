@@ -1,21 +1,6 @@
 <template>
 <body>
   <v-container class="signin">
-    <div class="moxi-image">
-      <v-img src="https://image.flaticon.com/icons/svg/3142/3142608.svg" class="moxi"></v-img>
-    </div>
-    <div class="plant-image">
-      <!-- <v-img :eager="true" class="plant" contain :src="items[1]"></v-img> -->
-    </div>
-    <div class="plant-image">
-      <!-- <v-img class="plant-2" contain :src="items[1]"></v-img> -->
-    </div>
-    <div class="plant-image">
-      <!-- <v-img class="plant-3" contain :src="items[1]"></v-img> -->
-    </div>
-    <div class="plant-image">
-      <!-- <v-img class="plant-4" contain :src="items[1]"></v-img> -->
-    </div>
     <div class="title white-text center-align">
       <h2>Welcome Back!</h2>
     </div>
@@ -80,93 +65,19 @@ body {
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
-.moxi {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  top: 110px;
-  left: 300px;
-  z-index: -1;
-}
-
-.plant {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  top: 220px;
-  left: 300px;
-  z-index: -1;
-}
-
-.plant-2 {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  top: 100px;
-  left: 50px;
-  z-index: -1;
-}
-
-.plant-3 {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  top: 220px;
-  left: 800px;
-  z-index: -1;
-}
-
-.plant-4 {
-  position: absolute;
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-  top: 100px;
-  left: 780px;
-  z-index: -1;
-  transform: scaleX(-1);
-}
 
 /* iPad */
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
-  .moxi {
-    position: absolute;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    top: 90px;
-    left: 50px;
-    z-index: -1;
-  }
+
 }
 
 /* iPad Pro */
 @media (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-  .moxi {
-    position: absolute;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    top: 90px;
-    left: 90px;
-    z-index: -1;
-  }
+  
 }
 
 /* iPhones */
 @media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  .moxi {
-    position: absolute;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    top: 90px;
-    left: 300px;
-    z-index: -1;
-  }
+ 
 }
 </style>

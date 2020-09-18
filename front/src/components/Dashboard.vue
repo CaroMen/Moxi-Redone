@@ -100,12 +100,16 @@ export default {
 <style>
 body {
   background-color: #1e1935 !important;
+  height: 100%;
+  margin: 0;
 }
 
 .background {
   background-color: #1e1935;
   margin-top: -10px;
   color: white;
+  height: 100%;
+  margin: 0;
 }
 
 .welcome {
@@ -132,6 +136,8 @@ body {
 
 .section-1-bg {
   background: #1e1935;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .section-1 .btn-floating {
