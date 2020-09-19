@@ -1,31 +1,35 @@
 <template>
-  <div class="navbar nav-wrapper grid">
+  <div class="navbar nav-wrapper">
     <nav class="nav-extended z-depth-0">
-      <div class="nav-content">
-        <router-link to>
-          <span class="nav-title text">MOXI.</span>
-        </router-link>
+      <div class="grid">
+        <div class="nav-content">
+          <router-link to>
+            <span class="nav-title text">MOXI.</span>
+          </router-link>
+        </div>
       </div>
-      <div class="nav-content">
+      <div class="nav-content2">
+        <input class="menu-btn" type="checkbox" id = "menu-btn"/>
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <router-link to>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="right hide-on-small-and-down">
             <li class="tab">
-              <router-link :to="{ name: 'Index' }">
+              <router-link :to="{ name: 'Index' }" class="link">
                 <a>Home</a>
               </router-link>
             </li>
             <li class="tab">
-              <router-link :to="{ name: 'Dashboard' }">
+              <router-link :to="{ name: 'Dashboard' }" class="link">
                 <a>Dashboard</a>
               </router-link>
             </li>
             <li class="tab">
-              <router-link active-class="active" :to="{ name: 'SignIn' }">
+              <router-link active-class="active" :to="{ name: 'SignIn' }" class="link">
                 <a>Sign In</a>
               </router-link>
             </li>
             <li class="tab">
-              <router-link :to="{ name: 'SignUp' }">
+              <router-link :to="{ name: 'SignUp' }" class="link">
                 <a>Sign Up</a>
               </router-link>
             </li>
@@ -71,10 +75,12 @@ body {
   font-size: 50px;
 }
 
-#nav-mobile {
-  padding: 30px 10px;
+ #nav-mobile{
+  padding: 30px 0px !important;
+   display: inline-block; 
+  text-align: center;
   color: #f0c345;
-}
+} 
 
 /* mobile styles */
 
@@ -90,35 +96,33 @@ body {
   font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
-.right{
+.nav-content2 {
   /* padding-right: 20px !important; */
-  /* margin: 8px -20px; */
+  margin: 0px;
+  padding: 14px 16px;
+  float: right;
   background-color: #1e1935 !important;
-  position: relative;
+  grid-row: 8/6;
+  text-align: center;
 }
 
-/* #nav-mobile {
+#nav-mobile {
+  margin-top: -120px;
   padding: 30px 10px;
   background-color: #1e1935 !important;
   color: #f0c345;
-} */
-
-.navbar .nav-title {
-  grid-column: 1/4;
-  grid-row: 1;
-  padding-bottom: 10px;
-  border-bottom: 3px;
 }
-
-/* .nav-content {
-  padding: 0 20px 20px 20px;
-} */
 
 /* iPad */
 @media (min-device-width: 768px) and (max-device-width: 1024px) {  
 
-  .navbar ul {
-    display: none;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav-title  {
+    margin-left: -70px;
   }
 
   .navbar nav { 
@@ -126,22 +130,18 @@ body {
     font-family: Lato, Helvetica, Arial, sans-serif;
   }
 
-  .right {
-    padding-right: 20px !important;
-    margin: 8px -20px;
-    background-color: #1e1935 !important;
-    position: relative;
-  }
-
   #nav-mobile {
-    padding: 30px 10px;
+    margin-top: -120px;
+    margin-right: -120px;
+    /* margin-left: 120px; */
+    /* margin: 0 10px 0 0px; */
     background-color: #1e1935 !important;
     color: #f0c345;
   }
 
-  /* .navbar ul {
-    display: none;
-  } */
+  #nav-mobile .link {
+    margin-right: -50px;
+  }
 
 }
 
@@ -154,7 +154,8 @@ body {
   }
   
   .navbar nav {
-    padding: 0 60px;
+    padding: 0 80px;
+    margin-left: 20px;
     font-family: Lato, Helvetica, Arial, sans-serif;
   }
 
