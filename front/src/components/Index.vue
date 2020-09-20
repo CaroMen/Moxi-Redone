@@ -1,13 +1,13 @@
 <template>
 <body>
-  <div class="Index grid-index" :style="myStyle" id="wrapper">
+    <div class="Index grid-index" :style="myStyle" id="wrapper">
     <!-- <div class="welcome2"> -->
-      <!-- <h2 class="welcome-txt center-align white-text welcome">Welcome To Moxi Web!</h2> -->
+      <h2 class="welcome-txt center-align white-text welcome">Welcome To Moxi Web!</h2>
     <!-- </div> -->
     <!-- <div class="intro2"> -->
-      <!-- <h2 class="center-align white-text intro">KEEP TRACK OF EVERYTHING</h2> -->
+      <h2 class="center-align white-text intro">KEEP TRACK OF EVERYTHING</h2>
     <!-- </div> -->
-  </div>
+    </div>
 </body>
 </template>
 
@@ -72,28 +72,20 @@ template {
   } */
 
   html, body {
-    background-color: #1e1935 !important;
+    /* background-color: #1e1935 !important; */
     margin: 0 !important;
     padding: 0 !important;
-    height: 100%;
-    width: 100%;
-    /* min-width: 1024px; */
-    /* position: fixed;; */
-    /* top:700px; */
-    /* bottom:0; */
-    /* left:0; */
-    /* right:0; */
   }
-
 
   .grid-index {
     display: grid;
     grid-template-rows: repeat(2, 1fr) !important;
     grid-template-columns: repeat(4, 1fr) !important;
+    /* grid-gap: 20px; */
   }
 
   .welcome {
-    margin: 100px !important;
+    margin: 0px !important;
     padding: 0 !important;
     grid-column: 1/5;
     /* display: flex;

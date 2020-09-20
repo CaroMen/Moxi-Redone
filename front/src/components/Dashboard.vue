@@ -109,7 +109,7 @@ body {
   margin-top: -10px;
   color: white;
   height: 100%;
-  width: 124%;
+  width: 100%;
   margin: 0;
 }
 
@@ -224,8 +224,11 @@ a:active {
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
 
   .welcome-dash, .tabs-line, body {
-    width: 90%;
+    width: 100%;
   }
   
+  .card {
+    width: 100%;
+  }
 }
 </style>
