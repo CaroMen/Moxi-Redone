@@ -1,12 +1,10 @@
 <template>
-  <div class="navbar nav-wrapper">
+  <div class="navbar nav-wrapper grid">
     <nav class="nav-extended z-depth-0">
-      <div class="grid">
-        <div class="nav-content">
+      <div class="title">
           <router-link to>
             <span class="nav-title text">MOXI.</span>
           </router-link>
-        </div>
       </div>
       <div class="nav-content2">
         <input class="menu-btn" type="checkbox" id = "menu-btn"/>
@@ -55,6 +53,11 @@ export default {
 </script>
 
 <style>
+* {
+  height: auto;
+  width: auto;
+}
+
 body {
   background-color: #1e1935 !important;
   color: #f0c345;
@@ -77,17 +80,17 @@ body {
 
  #nav-mobile{
   padding: 30px 0px !important;
-   display: inline-block; 
+  display: inline-block; 
   text-align: center;
   color: #f0c345;
 } 
 
 /* mobile styles */
-
+/* 
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-}
+} */
 
 .navbar{
   padding: 0 60px;
@@ -102,7 +105,7 @@ body {
   padding: 14px 16px;
   float: right;
   background-color: #1e1935 !important;
-  grid-row: 8/6;
+  /* grid-row: 8/6; */
   text-align: center;
 }
 
@@ -116,9 +119,14 @@ body {
 /* iPad */
 @media (min-device-width: 768px) and (max-device-width: 1024px) {  
 
+  template {
+    background-color: #1e1935 !important;
+  }
+ 
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 
   .nav-title  {
@@ -126,21 +134,26 @@ body {
   }
 
   .navbar nav { 
-    padding: 0 60px;
+    padding: 0 80px;
+    margin-top: -10px;
     font-family: Lato, Helvetica, Arial, sans-serif;
+    width: 250%;
+    
   }
 
   #nav-mobile {
-    margin-top: -120px;
-    margin-right: -120px;
-    /* margin-left: 120px; */
-    /* margin: 0 10px 0 0px; */
     background-color: #1e1935 !important;
     color: #f0c345;
   }
 
-  #nav-mobile .link {
-    margin-right: -50px;
+  .nav-content2 #nav-mobile li {
+    margin-top: 0px;
+    margin-right: -20px;
+  } 
+
+  #nav-mobile {
+    margin-right: 0px;
+    float: right;
   }
 
 }

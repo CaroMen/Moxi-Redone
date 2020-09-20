@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style>
-body {
-  /* background: #603ce7; */
-}
 
 .cont {
   max-width: 500px;

@@ -5,12 +5,12 @@
       <!-- <div class="welcome center">
         <h2>I dont know what will go here</h2>
       </div>-->
-      <div class="welcome">
+      <div class="welcome-dash">
         <h3>Welcome</h3>
       </div>
     </div>
     <!-- </v-parallax> -->
-    <v-card>
+    <v-card class="tabs-line">
       <v-tabs background-color="#603CE7" color="#F0C345" right>
         <v-tab>
           <router-link :to="{ name: 'Dashboard' }">Dashboard</router-link>
@@ -109,6 +109,7 @@ body {
   margin-top: -10px;
   color: white;
   height: 100%;
+  width: 124%;
   margin: 0;
 }
 
@@ -121,7 +122,7 @@ body {
 }
 
 .card {
-  background-color: #b63674;
+  background-color: #b63674 !important;
   border-radius: 10px;
 }
 
@@ -218,5 +219,13 @@ a:hover {
 } /* Mouse over link */
 a:active {
   color: inherit !important;
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  .welcome-dash, .tabs-line, body {
+    width: 90%;
+  }
+  
 }
 </style>
